@@ -1,0 +1,64 @@
+/**
+ * #.# Styles blog-grid
+ *
+ * CSS for both Frontend+Backend.
+*/
+
+.ultimate-blog-layouts.blog-grid{ 		
+	.blog-item {
+		background: #fff;
+		padding: 15px;
+		box-shadow: 0 0 25px rgba(204, 204, 204, 0.2);
+		word-break: break-word;
+		.blg-image-wrapper{
+			margin-bottom: 15px;
+		}
+		.blg-inner-box{
+			h3{
+				margin-bottom: 6px;
+			}
+		}
+	}
+}
+
+.ultimate-blog-layouts.blog-grid .blg-col-1{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 15px;
+}
+.ultimate-blog-layouts.blog-grid .blg-col-2{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 15px;
+}
+
+.ultimate-blog-layouts.blog-grid .blg-col-3{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 15px;
+}
+
+.ultimate-blog-layouts.blog-grid .blg-col-4{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(calc(25% - 30px), 1fr));
+	grid-gap: 15px;
+}
+
+@media only screen and (max-width: 1024px){
+	.ultimate-blog-layouts.blog-grid .blg-col-4{
+		grid-template-columns: repeat(auto-fit, minmax(190px,1fr));
+	}
+	
+}
+
+@media only screen and (max-width: 767px){
+	.ultimate-blog-layouts.blog-grid .blg-col-3{
+		grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+	}
+}
+
+@media only screen and (max-width: 425px){
+	.ultimate-blog-layouts.blog-grid .blg-col-2{
+		grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+	}
+}

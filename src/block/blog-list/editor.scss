@@ -1,0 +1,13 @@
+/**
+ * #.# Editor Styles blog-list
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+*/
+
+.ultimate-blog-layouts.blog-list .content-box h3{
+	margin-top: 0;
+}
+.ultimate-blog-layouts.blog-list .blg-meta-box .blg-category a::after{
+	display: none;
+}

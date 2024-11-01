@@ -1,0 +1,19 @@
+/**
+ * #.# Editor Styles blog-grid
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+ 
+.ultimate-blog-layouts.blog-grid .blg-inner-box h3{
+	margin-top: 0;
+}
+
+.ultimate-blog-layouts.blog-grid .blg-col-4{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
+	grid-gap: 15px;
+}
+.ultimate-blog-layouts.blog-grid .blg-meta-box .blg-category a::after{
+	display: none;
+}

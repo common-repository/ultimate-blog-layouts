@@ -1,0 +1,29 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+
+.ultimate-blog-layouts{
+	margin-top: 20px;
+}
+.ultimate-blog-layouts .blg-inner-box h3{
+	margin-top: 0;
+}
+.ultimate-blog-layouts .blg-meta-box > span::after {
+	margin: 0 10px;
+	content: '/';
+}
+.ultimate-blog-layouts .blg-meta-box{
+	margin-bottom: 15px;
+}
+.ultimate-blog-layouts .blg-meta-box > span:last-child::after{
+	display: none;
+}
+.ultimate-blog-layouts .blg-meta-box .blg-category a::after {
+	content: ', ';
+}
+.ultimate-blog-layouts .blg-meta-box .blg-category a:last-child::after{
+	display: none;
+}
